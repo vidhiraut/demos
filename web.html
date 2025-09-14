@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Widget Demo</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <header>
+        <h1>Welcome to Demo Site</h1>
+    </header>
+    <main>
+        <p>This is a simple demo page for testing the chat widget. </p>
+    </main>
+    <script src="script.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+<script type="module">
+	import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+	createChat({
+		webhookUrl: 'https://ash14.app.n8n.cloud/webhook/c5c13d1d-9545-48e9-9357-18e1698b2d05/chat'
+	});
+</script>
+</body>
+</html>
